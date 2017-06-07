@@ -48,9 +48,6 @@ public class GetMySavedTracksRequest extends AbstractRequest {
 
   public static final class Builder extends AbstractRequest.Builder<Builder> {
 
-    public Builder accessToken(String accessToken) {
-      return header("Authorization", "Bearer " + accessToken);
-    }
 
     public GetMySavedTracksRequest build() {
       return new GetMySavedTracksRequest(this);

@@ -80,10 +80,6 @@ public class FeaturedPlaylistsRequest extends AbstractRequest {
       return parameter("timestamp", format.format(timestamp));
     }
 
-    public Builder accessToken(String accessToken) {
-      return header("Authorization", "Bearer " + accessToken);
-    }
-
     public FeaturedPlaylistsRequest build() {
       path("/v1/browse/featured-playlists");
       return new FeaturedPlaylistsRequest(this);
